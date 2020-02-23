@@ -14,8 +14,8 @@ data class Vehicles(
   @field:Json(name = "max_atmosphering_speed") val maxAtmosphericSpeed: String = "",
   @field:Json(name = "cargo_capacity") val cargoCapacity: String = "",
   @field:Json(name = "consumables") val consumables: String = "",
-  @field:Json(name = "films") val films: Array<Films>? = null,
-  @field:Json(name = "pilots") val pilots: Array<People>? = null,
+  @field:Json(name = "films") val films: Array<Films>,
+  @field:Json(name = "pilots") val pilots: Array<People>,
   @field:Json(name = "url") val url: String = "",
   @field:Json(name = "created") val created: String = "",
   @field:Json(name = "edited") val edited: String = ""

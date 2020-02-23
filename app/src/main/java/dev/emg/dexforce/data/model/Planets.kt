@@ -12,8 +12,8 @@ data class Planets(
   @field:Json(name = "climate") val climate: String = "",
   @field:Json(name = "terrain") val terrain: String = "",
   @field:Json(name = "surface_water") val surfaceWater: String = "",
-  @field:Json(name = "residents") val residents: Array<People>? = null,
-  @field:Json(name = "films") val films: Array<Films>? = null,
+  @field:Json(name = "residents") val residents: Array<People>,
+  @field:Json(name = "films") val films: Array<Films>,
   @field:Json(name = "url") val url: String = "",
   @field:Json(name = "created") val created: String = "",
   @field:Json(name = "edited") val edited: String = ""

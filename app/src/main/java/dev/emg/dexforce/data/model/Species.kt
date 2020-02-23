@@ -13,8 +13,8 @@ data class Species(
   @field:Json(name = "skin_colors") val skinColors: String = "",
   @field:Json(name = "language") val language: String = "",
   @field:Json(name = "homeworld") val homeworld: String = "",
-  @field:Json(name = "people") val people: Array<People>? = null,
-  @field:Json(name = "fimls") val films: Array<Films>? = null,
+  @field:Json(name = "people") val people: Array<People>,
+  @field:Json(name = "fimls") val films: Array<Films>,
   @field:Json(name = "url") val url: String = "",
   @field:Json(name = "created") val created: String = "",
   @field:Json(name = "edited") val edited: String = ""
