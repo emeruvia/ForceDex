@@ -1,19 +1,21 @@
 package dev.emg.dexforce.data.model
 
+import com.squareup.moshi.Json
+
 data class Species(
-  val name: String = "",
-  val classification: String = "",
-  val designation: String = "",
-  val average_height: String = "",
-  val average_lifespan: String = "",
-  val eye_colors: String = "",
-  val hair_colors: String = "",
-  val skin_colors: String = "",
-  val language: String = "",
-  val homeworld: String = "",
-  val people: Array<People>? = null,
-  val films: Array<Films>? = null,
-  val url: String = "",
-  val created: String = "",
-  val edited: String = ""
+  @field:Json(name = "name") val name: String = "",
+  @field:Json(name = "classification") val classification: String = "",
+  @field:Json(name = "designation") val designation: String = "",
+  @field:Json(name = "average_height") val avgHeight: String = "",
+  @field:Json(name = "average_lifespan") val avgLifespan: String = "",
+  @field:Json(name = "eye_colors") val eyeColors: String = "",
+  @field:Json(name = "hair_colors") val hairColors: String = "",
+  @field:Json(name = "skin_colors") val skinColors: String = "",
+  @field:Json(name = "language") val language: String = "",
+  @field:Json(name = "homeworld") val homeworld: String = "",
+  @field:Json(name = "people") val people: Array<People>? = null,
+  @field:Json(name = "fimls") val films: Array<Films>? = null,
+  @field:Json(name = "url") val url: String = "",
+  @field:Json(name = "created") val created: String = "",
+  @field:Json(name = "edited") val edited: String = ""
 )
