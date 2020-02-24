@@ -1,12 +1,12 @@
 package dev.emg.dexforce.data.repository
 
 import dev.emg.dexforce.data.api.SwapiService
-import dev.emg.dexforce.data.utils.RetrofitClient
+import dev.emg.dexforce.data.api.SwapiService.Companion
 
 class PeopleRepository {
 
-  private val retrofitClient: SwapiService = RetrofitClient.service
+  private val swapiService by lazy { SwapiService.create() }
 
-  suspend fun getPeople() = retrofitClient.getPeople()
+  suspend fun getPeople() = swapiService.getPeople()
 
 }
